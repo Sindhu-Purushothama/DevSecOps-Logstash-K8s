@@ -1,58 +1,82 @@
-# DevSecOps Logstash & Kubernetes Simulation 🛡️🚀
+# DevSecOps-Logstash-K8s 🔐🛠️
 
-## Overview 📚
-This repository showcases a **SOC Analyst simulation project** using **Logstash**, **Docker**, and **Kubernetes**.  
-It demonstrates how logs can be collected, processed, and monitored in a containerized environment, highlighting automation and security practices. Perfect for building a **Cybersecurity portfolio**! 🔐💻
+Welcome to my **SOC Simulation Project**! This project showcases my skills in **log monitoring, automation, and DevSecOps concepts** using Docker, Logstash, and optionally Kubernetes. Perfect for a portfolio to demonstrate abilities as a SOC Analyst.  
 
-## Features ✨
-- Automated deployment of **Logstash** on **AWS** using **Terraform** and **Ansible** ⚙️  
-- Containerized environment using **Docker** 🐳  
-- Orchestrated container management with **Kubernetes** ☸️  
-- Collects logs from multiple sources and simulates real-world scenarios 📝  
-- Demonstrates **SOC monitoring & alerting workflows** 🚨  
+## 🚀 Project Overview
+This project simulates a SOC environment where logs are generated, collected, and processed using Logstash. It also demonstrates Infrastructure as Code (IaC) concepts with automation scripts.
 
-## Project Structure 📂
+### Key Features
+- ✅ Generate sample logs using Python (`generate_logs.py`)  
+- ✅ Collect and process logs with Logstash (`logstash/logstash.conf`)  
+- ✅ Run services using Docker (`docker-compose.yml`)  
+- ✅ (Optional) Simulate Kubernetes orchestration (`k8s/`)  
+
+## 📁 Project Structure
 soc-simulation/
-├─ docker-compose.yml # Docker Compose configuration
-├─ generate_logs.py # Script to generate sample logs 📝
-├─ logs/ # Sample log files 📄
-├─ logstash/ # Logstash configuration 🔧
-└─ soc-soc-sim/ # Submodule simulation (optional) 🔹
+│
+├── README.md # Project overview
+├── docker-compose.yml # Run your services
+├── generate_logs.py # Generate log data
+├── logs/ # Sample logs
+│ ├── sample1.log
+│ └── sample2.log
+└── logstash/ # Logstash configuration
+└── logstash.conf
 
-markdown
+less
 Copy code
 
-## Learning Objectives 🎯
-- Understand **DevSecOps pipelines** and automation  
-- Learn **Infrastructure as Code (IaC)** using Terraform & Ansible  
-- Hands-on experience with **Docker containers** and **Kubernetes orchestration**  
-- Gain skills relevant to **SOC Analyst** roles: log monitoring, parsing, and alert simulation 🛡️  
-
-## How to Run 🏃‍♀️
-1. Ensure **Docker** and **Kubernetes** are installed and running 🐳☸️  
-2. Clone the repository:  
+## ⚙️ How to Run
+1. Install [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/).  
+2. Clone this repository:
 ```bash
 git clone https://github.com/Sindhu-Purushothama/Devsecops-logstack-k8s.git
-cd Devsecops-logstack-k8s
-Start the environment:
+cd soc-simulation
+Run Docker Compose:
 
 bash
 Copy code
 docker-compose up -d
-Generate sample logs:
+Check running containers:
 
 bash
 Copy code
-python3 generate_logs.py
-Observe log ingestion and monitoring in Logstash and container outputs 📊
+docker-compose ps
+Logs will be generated in the logs/ folder.
 
-Skills Highlighted 🏆
-SIEM & Monitoring: Logstash, Docker, Kubernetes
+📌 Notes
+Kubernetes folder is optional and can be added later.
 
-Automation: Terraform, Ansible
+This project demonstrates SOC monitoring skills and DevSecOps practices.
 
-Cloud & Infrastructure: AWS EC2, Kubernetes orchestration
+👩‍💻 About Me
+SOC Analyst | CompTIA Security+
 
-SOC Analyst: Threat detection simulation, log collection, alerting 🚨
+Experienced in SIEM (Wazuh, Splunk), cloud security, and log monitoring
 
-Portfolio Link 🔗 https://github.com/Sindhu-Purushothama
+LinkedIn Profile
+
+yaml
+Copy code
+
+---
+
+### **Optional README.md inside `logstash/` folder**  
+This explains **Logstash configuration specifics**.
+
+```markdown
+# Logstash Configuration 📝
+
+This folder contains the Logstash configuration used for the SOC simulation project.  
+
+## logstash.conf
+- Inputs logs from the `logs/` folder  
+- Processes and parses log data  
+- Outputs to Elasticsearch (or console for local testing)  
+
+## How to Use
+1. Make sure Docker and Docker Compose are running.  
+2. Run the main project with `docker-compose up -d`.  
+3. Logs will be collected and processed according to this configuration.  
+
+> This folder is for **reference and configuration management** of Logstash.
