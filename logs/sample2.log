@@ -1,0 +1,5 @@
+2025-09-02 13:01:02 INFO User 'charlie' logged in from 192.168.1.25
+2025-09-02 13:05:14 ERROR SSH brute-force detected from 10.0.0.8
+2025-09-02 13:10:33 WARN CPU usage on server 'web01' exceeded 90%
+2025-09-02 13:15:55 INFO New user 'david' created
+2025-09-02 13:20:42 ERROR Application 'finance_app' crashed unexpectedly

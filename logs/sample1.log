@@ -1,0 +1,7 @@
+2025-09-02 12:00:01 INFO User 'alice' logged in from 192.168.1.10
+2025-09-02 12:05:23 WARN Failed login attempt for user 'bob' from 192.168.1.15
+2025-09-02 12:10:45 INFO File '/etc/passwd' accessed by user 'root'
+2025-09-02 12:12:07 ERROR Unauthorized access attempt to '/admin' from 192.168.1.20
+2025-09-02 12:15:32 INFO User 'alice' logged out
+2025-09-02 12:20:11 WARN Firewall blocked incoming connection from 10.0.0.5
+2025-09-02 12:25:47 INFO Scheduled backup completed successfully
