@@ -1,75 +1,58 @@
-DevSecOps Logstash & Kubernetes Simulation
-Overview
+# DevSecOps Logstash & Kubernetes Simulation 🛡️🚀
 
-This project demonstrates a SOC-focused simulation using Logstash, Docker, and Kubernetes. It is designed to showcase threat detection, log collection, and automation skills relevant for a Security Operations Center (SOC) Analyst role.
+## Overview 📚
+This repository showcases a **SOC Analyst simulation project** using **Logstash**, **Docker**, and **Kubernetes**.  
+It demonstrates how logs can be collected, processed, and monitored in a containerized environment, highlighting automation and security practices. Perfect for building a **Cybersecurity portfolio**! 🔐💻
 
-Features
+## Features ✨
+- Automated deployment of **Logstash** on **AWS** using **Terraform** and **Ansible** ⚙️  
+- Containerized environment using **Docker** 🐳  
+- Orchestrated container management with **Kubernetes** ☸️  
+- Collects logs from multiple sources and simulates real-world scenarios 📝  
+- Demonstrates **SOC monitoring & alerting workflows** 🚨  
 
-Logstash Deployment Automation:
+## Project Structure 📂
+soc-simulation/
+├─ docker-compose.yml # Docker Compose configuration
+├─ generate_logs.py # Script to generate sample logs 📝
+├─ logs/ # Sample log files 📄
+├─ logstash/ # Logstash configuration 🔧
+└─ soc-soc-sim/ # Submodule simulation (optional) 🔹
 
-Deploys Logstash on AWS (or local Docker) using Terraform and Ansible.
+markdown
+Copy code
 
-Automates log ingestion from multiple sources for analysis.
+## Learning Objectives 🎯
+- Understand **DevSecOps pipelines** and automation  
+- Learn **Infrastructure as Code (IaC)** using Terraform & Ansible  
+- Hands-on experience with **Docker containers** and **Kubernetes orchestration**  
+- Gain skills relevant to **SOC Analyst** roles: log monitoring, parsing, and alert simulation 🛡️  
 
-Docker Containers:
-
-Simulates multiple isolated environments (containers) for testing logs and events.
-
-Each container acts as an independent instance, similar to real servers in production.
-
-Kubernetes Simulation (Optional):
-
-Demonstrates orchestration and scaling of multiple containerized environments.
-
-SOC Skills Highlighted:
-
-Log collection and monitoring
-
-Incident detection and triage
-
-Infrastructure-as-Code (Terraform & Ansible)
-
-Automation of repetitive tasks
-
-Understanding of cloud environments and container orchestration
-
-How to Run
-
-Clone the repository:
-
+## How to Run 🏃‍♀️
+1. Ensure **Docker** and **Kubernetes** are installed and running 🐳☸️  
+2. Clone the repository:  
+```bash
 git clone https://github.com/Sindhu-Purushothama/Devsecops-logstack-k8s.git
 cd Devsecops-logstack-k8s
+Start the environment:
 
-
-Start Docker:
-Ensure Docker is running on your system.
-
-Run the simulation:
-
+bash
+Copy code
 docker-compose up -d
+Generate sample logs:
 
+bash
+Copy code
+python3 generate_logs.py
+Observe log ingestion and monitoring in Logstash and container outputs 📊
 
-Verify running containers:
+Skills Highlighted 🏆
+SIEM & Monitoring: Logstash, Docker, Kubernetes
 
-docker-compose ps
+Automation: Terraform, Ansible
 
+Cloud & Infrastructure: AWS EC2, Kubernetes orchestration
 
-Check logs inside the logs/ folder for sample events.
+SOC Analyst: Threat detection simulation, log collection, alerting 🚨
 
-Skills Demonstrated
-
-Security monitoring & analysis (SOC)
-
-CI/CD pipeline understanding
-
-Infrastructure automation (Terraform & Ansible)
-
-Containerization (Docker) and orchestration concepts (Kubernetes)
-
-Cloud security basics
-
-Notes
-
-This project is safe to run locally; no sensitive data is included.
-
-Can be extended to include more complex SOC workflows for deeper demonstrations.
+Portfolio Link 🔗 https://github.com/Sindhu-Purushothama
