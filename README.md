@@ -14,18 +14,17 @@ Project Structure
 
 soc-simulation/
 │
-├── README.md                  # Project overview with setup instructions
-├── docker-compose.yml         # To run your services
-├── generate_logs.py           # Script to generate log data
-│
-├── logs/                      # Sample log files
+├── README.md                 
+├── docker-compose.yml         
+├── generate_logs.py           
+├── logs/                      
 │   ├── sample1.log
 │   └── sample2.log
 │
-├── logstash/                  # Logstash configuration
+├── logstash/                  
 │   └── logstash.conf
 │
-└── k8s/ (optional)            # Kubernetes manifests if you add them later
+└── k8s/ (optional)            
     ├── deployment.yaml
     └── service.yaml
 How to run
