@@ -11,6 +11,7 @@ Organizes and processes the log data using Logstash. 🔧
 Sends the processed logs to Elasticsearch or displays them in the console for analysis. 📊
 
 Project Structure
+
 soc-simulation/
 │
 ├── README.md                  # Project overview with setup instructions
@@ -27,20 +28,13 @@ soc-simulation/
 └── k8s/ (optional)            # Kubernetes manifests if you add them later
     ├── deployment.yaml
     └── service.yaml
-
 How to run
 
 Make sure Docker is running 🐳
 
-Run the services:
-
-docker-compose up -d
-
+Run the services: docker-compose up -d
 
 Check that Logstash is processing logs and Elasticsearch (if used) is receiving them. ✅
 
-Notes
-
-This is a simulation project for SOC analyst practice.
-
-Kubernetes folder is optional and can be added later for orchestration.
+Notes: * This is a simulation project for SOC analyst practice.
+       * Kubernetes folder is optional and can be added later for orchestration.
