@@ -1,69 +1,75 @@
-# Devsecops-logstack-k8s
-“Simulating a SOC environment with Logstash, Elasticsearch, Kibana, Docker, and Kubernetes for log monitoring and alerting.”
+DevSecOps Logstash & Kubernetes Simulation
+Overview
 
-# SOC Log Monitoring with Docker & Kubernetes
+This project demonstrates a SOC-focused simulation using Logstash, Docker, and Kubernetes. It is designed to showcase threat detection, log collection, and automation skills relevant for a Security Operations Center (SOC) Analyst role.
 
-This project simulates a Security Operations Center (SOC) environment using Docker and Kubernetes. It demonstrates how logs can be generated, collected, analyzed, and visualized in a scalable and automated setup, relevant for security monitoring and threat detection.
+Features
 
-## Features
+Logstash Deployment Automation:
 
-- **Log Generation:** Simulated server and application logs using Python scripts.
-- **Log Collection:** Collected and processed logs using Logstash.
-- **Storage:** Centralized logs in Elasticsearch for search and analysis.
-- **Visualization:** Real-time dashboards with Kibana.
-- **Containerization:** Each component runs in Docker containers for isolation.
-- **Orchestration:** Managed multiple containers using Kubernetes (Deployments & Services).
-- **Automation:** Scripts provided for Docker and Kubernetes deployment.
-- **Scalability:** Logstash containers can scale horizontally to handle increased log volumes.
+Deploys Logstash on AWS (or local Docker) using Terraform and Ansible.
 
-## Architecture
+Automates log ingestion from multiple sources for analysis.
 
-Log Generators --> Logstash (Docker/K8s) --> Elasticsearch --> Kibana Dashboard
+Docker Containers:
 
-markdown
-Copy code
+Simulates multiple isolated environments (containers) for testing logs and events.
 
-- Kubernetes handles container orchestration, scaling, and auto-healing.
-- Terraform/Ansible can be optionally integrated for Infrastructure as Code (IaC).
+Each container acts as an independent instance, similar to real servers in production.
 
-## Prerequisites
+Kubernetes Simulation (Optional):
 
-- Docker & Docker Compose
-- Kubernetes (Minikube or Kind)
-- Python 3.x
-- Git
+Demonstrates orchestration and scaling of multiple containerized environments.
 
-## How to Run
+SOC Skills Highlighted:
 
-### Using Docker (local test)
-```bash
-./scripts/deploy_docker.sh
-Using Kubernetes (Minikube/Kind)
-bash
-Copy code
-./scripts/deploy_k8s.sh
-Access Kibana dashboard at http://localhost:5601 to view logs.
+Log collection and monitoring
+
+Incident detection and triage
+
+Infrastructure-as-Code (Terraform & Ansible)
+
+Automation of repetitive tasks
+
+Understanding of cloud environments and container orchestration
+
+How to Run
+
+Clone the repository:
+
+git clone https://github.com/Sindhu-Purushothama/Devsecops-logstack-k8s.git
+cd Devsecops-logstack-k8s
+
+
+Start Docker:
+Ensure Docker is running on your system.
+
+Run the simulation:
+
+docker-compose up -d
+
+
+Verify running containers:
+
+docker-compose ps
+
+
+Check logs inside the logs/ folder for sample events.
 
 Skills Demonstrated
-SOC Analyst: Log monitoring, parsing, IOC detection, incident simulation
 
-DevOps/DevSecOps: Docker, Kubernetes, CI/CD basics
+Security monitoring & analysis (SOC)
 
-Cloud & Automation: Infrastructure-as-Code concepts, automation with scripts
+CI/CD pipeline understanding
 
-Project Structure
-perl
-Copy code
-multi-container-soc-logs/
-├── docker/          # Dockerfiles for Logstash, Elasticsearch, Kibana
-├── k8s/             # Kubernetes manifests (Deployments & Services)
-├── log-generators/  # Python scripts to simulate logs
-├── scripts/         # Deployment scripts
-├── diagrams/        # Architecture diagrams
-└── README.md
-Author
-Sindhu Purushothama
-SOC Analyst | CompTIA Security+ | SIEM (Wazuh, Splunk) | Azure & Cloud Security
-Location: Offenbach, Germany
-Email: sindhu.seu16@gmail.com
-LinkedIn: https://www.linkedin.com/in/sindhu-purushothama
+Infrastructure automation (Terraform & Ansible)
+
+Containerization (Docker) and orchestration concepts (Kubernetes)
+
+Cloud security basics
+
+Notes
+
+This project is safe to run locally; no sensitive data is included.
+
+Can be extended to include more complex SOC workflows for deeper demonstrations.
