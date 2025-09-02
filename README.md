@@ -66,4 +66,4 @@ Sindhu Purushothama
 SOC Analyst | CompTIA Security+ | SIEM (Wazuh, Splunk) | Azure & Cloud Security
 Location: Offenbach, Germany
 Email: sindhu.seu16@gmail.com
-LinkedIn: https://www.linkedin.com/in/sindhu-purushothama/
+LinkedIn: https://www.linkedin.com/in/sindhu-purushothama
